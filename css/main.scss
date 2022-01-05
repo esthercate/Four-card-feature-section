@@ -13,6 +13,13 @@ $Very-Dark-Blue: hsl(234, 12%, 34%);
 $Grayish-Blue: hsl(229, 6%, 66%);
 $Very-Light-Gray: hsl(0, 0%, 98%);
 
+$desktop: 1200px;
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
 /* General styles
 ------------------------------------------------------------------------*/
 * {
@@ -34,8 +41,20 @@ body{
 /* Container
 ------------------------------------------------------------------------*/
 .container {
-    max-width: 325px;
+    max-width: 350px;
 
+    @include desktop {
+        max-width: 1200px;
+    }
+
+}
+
+.cards {
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 /* Header section
@@ -43,17 +62,30 @@ body{
 .header{
 
     text-align: center;
-    padding: .5rem;
+    padding-top: 3rem;
 
     .hero {
         font-weight: 200;
+        font-size: 26px;
+        color: $Grayish-Blue;
+        
+    }
+    span {
+        font-size: 26px;
         color: $Very-Dark-Blue;
     }
 
     .main-paragraph {
         color: $Grayish-Blue;
         padding-top: 1rem;
+        font-size: 17px;
+
+        @include desktop {
+            padding: 16px 300px;
+            
+        }
     }
+    
 }
 
 
@@ -61,7 +93,7 @@ body{
 ------------------------------------------------------------------------*/
 .card-header{
 
-    h3 {
+    h2 {
         color: $Very-Dark-Blue;
         padding-bottom: .5rem;
         font-weight: bolder;
@@ -72,7 +104,6 @@ body{
 
     p {
         color: $Grayish-Blue;
-        font-size: 14px;
     }
 }
 
@@ -88,27 +119,43 @@ body{
     background-color: white;
     border-top: solid 5px $Cyan;
     border-radius: 5px;
+    box-shadow: 1px 1px 10px $Grayish-Blue;
     margin-top: 3rem;
     padding: 2rem 2rem 1rem 2rem;
 
     img {
         padding: 1rem 0 ;
     }
+
+    @include desktop {
+        width: 400px;
+        height: 60%;
+        margin-top: 15%;
+    }
+
 }
 
 
 /* Card 2
 ------------------------------------------------------------------------*/
+.wrapper {
+    @include desktop {
+        width: 400px;
+        margin: 1rem;
+    }
+}
 .card2 {
     background-color: white;
     border-top: solid 5px $Red;
     border-radius: 5px;
+    box-shadow: 1px 1px 10px $Grayish-Blue;
     margin-top: 1.5rem;
     padding: 2rem 2rem 1rem 2rem;
 
     img {
         padding: 1rem 0 ;
     }
+   
 }
 /* Card 3
 ------------------------------------------------------------------------*/
@@ -116,6 +163,7 @@ body{
     background-color: white;
     border-top: solid 5px $Orange;
     border-radius: 5px;
+    box-shadow: 1px 1px 10px $Grayish-Blue;
     margin-top: 1.5rem;
     padding: 2rem 2rem 1rem 2rem;
 
@@ -129,10 +177,17 @@ body{
     background-color: white;
     border-top: solid 5px $Blue;
     border-radius: 5px;
-    margin-top: 1.5rem;
+    box-shadow: 1px 1px 10px $Grayish-Blue;
+    margin: 1.5rem 0 2rem 0;
     padding: 2rem 2rem 1rem 2rem;
 
     img {
         padding: 1rem 0;
+    }
+
+    @include desktop {
+        width: 400px;
+        height: 60%;
+        margin-top: 15%;
     }
 }

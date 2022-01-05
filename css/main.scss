@@ -24,23 +24,115 @@ $Very-Light-Gray: hsl(0, 0%, 98%);
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
+    background-color: $Very-Light-Gray;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/* General styles
+/* Container
 ------------------------------------------------------------------------*/
+.container {
+    max-width: 325px;
 
-/* 
-------------------------------------------------------------------------*/
+}
 
-/* 
+/* Header section
 ------------------------------------------------------------------------*/
+.header{
 
-/* 
-------------------------------------------------------------------------*/
+    text-align: center;
+    padding: .5rem;
 
-/* 
+    .hero {
+        font-weight: 200;
+        color: $Very-Dark-Blue;
+    }
+
+    .main-paragraph {
+        color: $Grayish-Blue;
+        padding-top: 1rem;
+    }
+}
+
+
+/* Card general styles
 ------------------------------------------------------------------------*/
+.card-header{
+
+    h3 {
+        color: $Very-Dark-Blue;
+        padding-bottom: .5rem;
+        font-weight: bolder;
+    }
+}
+
+.card-body {
+
+    p {
+        color: $Grayish-Blue;
+        font-size: 14px;
+    }
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* Card 1
+------------------------------------------------------------------------*/
+.card1 {
+    background-color: white;
+    border-top: solid 5px $Cyan;
+    border-radius: 5px;
+    margin-top: 3rem;
+    padding: 2rem 2rem 1rem 2rem;
+
+    img {
+        padding: 1rem 0 ;
+    }
+}
+
+
+/* Card 2
+------------------------------------------------------------------------*/
+.card2 {
+    background-color: white;
+    border-top: solid 5px $Red;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    padding: 2rem 2rem 1rem 2rem;
+
+    img {
+        padding: 1rem 0 ;
+    }
+}
+/* Card 3
+------------------------------------------------------------------------*/
+.card3 {
+    background-color: white;
+    border-top: solid 5px $Orange;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    padding: 2rem 2rem 1rem 2rem;
+
+    img {
+        padding: 1rem 0;
+    }
+}
+/*  Card 4
+------------------------------------------------------------------------*/
+.card4 {
+    background-color: white;
+    border-top: solid 5px $Blue;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    padding: 2rem 2rem 1rem 2rem;
+
+    img {
+        padding: 1rem 0;
+    }
+}

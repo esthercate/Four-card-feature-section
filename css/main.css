@@ -11,6 +11,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
+  background-color: #fafafa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,14 +27,108 @@ body {
           align-items: center;
 }
 
-/* General styles
+/* Container
 ------------------------------------------------------------------------*/
-/* 
+.container {
+  max-width: 325px;
+}
+
+/* Header section
 ------------------------------------------------------------------------*/
-/* 
+.header {
+  text-align: center;
+  padding: .5rem;
+}
+
+.header .hero {
+  font-weight: 200;
+  color: #4c4e61;
+}
+
+.header .main-paragraph {
+  color: #a3a5ae;
+  padding-top: 1rem;
+}
+
+/* Card general styles
 ------------------------------------------------------------------------*/
-/* 
+.card-header h3 {
+  color: #4c4e61;
+  padding-bottom: .5rem;
+  font-weight: bolder;
+}
+
+.card-body p {
+  color: #a3a5ae;
+  font-size: 14px;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* Card 1
 ------------------------------------------------------------------------*/
-/* 
+.card1 {
+  background-color: white;
+  border-top: solid 5px #45d3d3;
+  border-radius: 5px;
+  margin-top: 3rem;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+.card1 img {
+  padding: 1rem 0;
+}
+
+/* Card 2
 ------------------------------------------------------------------------*/
+.card2 {
+  background-color: white;
+  border-top: solid 5px #ea5353;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+.card2 img {
+  padding: 1rem 0;
+}
+
+/* Card 3
+------------------------------------------------------------------------*/
+.card3 {
+  background-color: white;
+  border-top: solid 5px #d49a4e;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+.card3 img {
+  padding: 1rem 0;
+}
+
+/*  Card 4
+------------------------------------------------------------------------*/
+.card4 {
+  background-color: white;
+  border-top: solid 5px #549ef2;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+.card4 img {
+  padding: 1rem 0;
+}
 /*# sourceMappingURL=main.css.map */
